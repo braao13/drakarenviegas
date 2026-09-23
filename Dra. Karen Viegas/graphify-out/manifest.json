@@ -1,0 +1,356 @@
+{
+  ".claude/launch.json": {
+    "mtime": 1787410989.4786246,
+    "seen": 1790195938.7809517,
+    "ast_hash": "926a239d32dcb6ed0de5c68b8ac48373",
+    "semantic_hash": "926a239d32dcb6ed0de5c68b8ac48373"
+  },
+  ".oxlintrc.json": {
+    "mtime": 1787408437.0,
+    "seen": 1790195938.780961,
+    "ast_hash": "5e6e3cea3e89137071c142dd7835b0ef",
+    "semantic_hash": "5e6e3cea3e89137071c142dd7835b0ef"
+  },
+  "components.json": {
+    "mtime": 1787409094.27726,
+    "seen": 1790195938.7809644,
+    "ast_hash": "7c81e886e8df2eba8a3b89bbbe397f70",
+    "semantic_hash": "7c81e886e8df2eba8a3b89bbbe397f70"
+  },
+  "jsconfig.json": {
+    "mtime": 1787408798.016405,
+    "seen": 1790195938.780966,
+    "ast_hash": "c96b6082ab4ccf017691880bbb8a9752",
+    "semantic_hash": "c96b6082ab4ccf017691880bbb8a9752"
+  },
+  "package.json": {
+    "mtime": 1787414086.6990342,
+    "seen": 1790195938.7809677,
+    "ast_hash": "6ee4dfda0e42a75418e5313afa7ad7aa",
+    "semantic_hash": "6ee4dfda0e42a75418e5313afa7ad7aa"
+  },
+  "src/App.jsx": {
+    "mtime": 1788003652.9424849,
+    "seen": 1790195938.7809687,
+    "ast_hash": "672b2b1acca9e6fac94e404e478efacb",
+    "semantic_hash": "672b2b1acca9e6fac94e404e478efacb"
+  },
+  "src/components/layout/Footer.jsx": {
+    "mtime": 1788009330.1329577,
+    "seen": 1790195938.7809706,
+    "ast_hash": "d6089e72ea1419e224cb199618282435",
+    "semantic_hash": "d6089e72ea1419e224cb199618282435"
+  },
+  "src/components/layout/Header.jsx": {
+    "mtime": 1788010699.268887,
+    "seen": 1790195938.7809718,
+    "ast_hash": "4a575f13143e5b71bf096c3577f70ca4",
+    "semantic_hash": "4a575f13143e5b71bf096c3577f70ca4"
+  },
+  "src/components/layout/PrivacyNotice.jsx": {
+    "mtime": 1787415093.6417937,
+    "seen": 1790195938.7809732,
+    "ast_hash": "1041c9a25378d41a4ca9eec7532a0859",
+    "semantic_hash": "1041c9a25378d41a4ca9eec7532a0859"
+  },
+  "src/components/layout/WhatsAppFloat.jsx": {
+    "mtime": 1787410563.7214458,
+    "seen": 1790195938.7809746,
+    "ast_hash": "8ab1d2d2d3d5ea382d271b56a95361ed",
+    "semantic_hash": "8ab1d2d2d3d5ea382d271b56a95361ed"
+  },
+  "src/components/sections/About.jsx": {
+    "mtime": 1788008394.3882933,
+    "seen": 1790195938.7809756,
+    "ast_hash": "ec0a78a6c013edd5c2c1e16845447950",
+    "semantic_hash": "ec0a78a6c013edd5c2c1e16845447950"
+  },
+  "src/components/sections/CareAreas.jsx": {
+    "mtime": 1787501642.9384384,
+    "seen": 1790195938.780978,
+    "ast_hash": "b510a1d3716f72d39159826cd2e7072d",
+    "semantic_hash": "b510a1d3716f72d39159826cd2e7072d"
+  },
+  "src/components/sections/Contact.jsx": {
+    "mtime": 1787609502.6525133,
+    "seen": 1790195938.780979,
+    "ast_hash": "5546acbb7e435c1881b26dbe4b46e86f",
+    "semantic_hash": "5546acbb7e435c1881b26dbe4b46e86f"
+  },
+  "src/components/sections/Differentials.jsx": {
+    "mtime": 1787501383.5921988,
+    "seen": 1790195938.78098,
+    "ast_hash": "88e2eba5f53f1c6881d79db8065ccbea",
+    "semantic_hash": "88e2eba5f53f1c6881d79db8065ccbea"
+  },
+  "src/components/sections/FAQSection.jsx": {
+    "mtime": 1787410627.0178125,
+    "seen": 1790195938.7809818,
+    "ast_hash": "e56d7405a7d115edc0db7a1ed6482636",
+    "semantic_hash": "e56d7405a7d115edc0db7a1ed6482636"
+  },
+  "src/components/sections/Hero.jsx": {
+    "mtime": 1788008709.7291358,
+    "seen": 1790195938.780983,
+    "ast_hash": "597288a8a0e5ba0874700610c037e062",
+    "semantic_hash": "597288a8a0e5ba0874700610c037e062"
+  },
+  "src/components/sections/Location.jsx": {
+    "mtime": 1787506780.3893406,
+    "seen": 1790195938.7809844,
+    "ast_hash": "1683bcb1a5c2da201cac0c3b73453403",
+    "semantic_hash": "1683bcb1a5c2da201cac0c3b73453403"
+  },
+  "src/components/sections/Testimonials.jsx": {
+    "mtime": 1787504644.7081683,
+    "seen": 1790195938.7809856,
+    "ast_hash": "2590df21cd8e0e64ca729d04da16f9fb",
+    "semantic_hash": "2590df21cd8e0e64ca729d04da16f9fb"
+  },
+  "src/components/ui/Accordion.jsx": {
+    "mtime": 1787410544.0750928,
+    "seen": 1790195938.7809901,
+    "ast_hash": "a517101c0dcca0c8a163ff7ec384f0b5",
+    "semantic_hash": "a517101c0dcca0c8a163ff7ec384f0b5"
+  },
+  "src/components/ui/Badge.jsx": {
+    "mtime": 1787410539.76109,
+    "seen": 1790195938.7809913,
+    "ast_hash": "67c34311d1dcf1bf2da164500be74c4d",
+    "semantic_hash": "67c34311d1dcf1bf2da164500be74c4d"
+  },
+  "src/components/ui/BorderGlow.jsx": {
+    "mtime": 1787501590.7795918,
+    "seen": 1790195938.7809927,
+    "ast_hash": "ef036530483b07432ef04fecee036f17",
+    "semantic_hash": "ef036530483b07432ef04fecee036f17"
+  },
+  "src/components/ui/Button.jsx": {
+    "mtime": 1787410538.0999718,
+    "seen": 1790195938.7809947,
+    "ast_hash": "927d66a1c1c53327091f15187e7ced4a",
+    "semantic_hash": "927d66a1c1c53327091f15187e7ced4a"
+  },
+  "src/components/ui/Container.jsx": {
+    "mtime": 1787410531.191723,
+    "seen": 1790195938.780997,
+    "ast_hash": "256e3c7d0e12f598838ecf116b4e549b",
+    "semantic_hash": "256e3c7d0e12f598838ecf116b4e549b"
+  },
+  "src/components/ui/FilterPills.jsx": {
+    "mtime": 1787414161.8686464,
+    "seen": 1790195938.780999,
+    "ast_hash": "5e8f8b26772d3384e26c863238c0e540",
+    "semantic_hash": "5e8f8b26772d3384e26c863238c0e540"
+  },
+  "src/components/ui/LogoMark.jsx": {
+    "mtime": 1788008844.6441922,
+    "seen": 1790195938.7810004,
+    "ast_hash": "b13957db8f44405667672780996685f5",
+    "semantic_hash": "b13957db8f44405667672780996685f5"
+  },
+  "src/components/ui/Modal.jsx": {
+    "mtime": 1787415062.828275,
+    "seen": 1790195938.781002,
+    "ast_hash": "922666e3b11add641bbd63f47ec8b696",
+    "semantic_hash": "922666e3b11add641bbd63f47ec8b696"
+  },
+  "src/components/ui/PillNav.jsx": {
+    "mtime": 1788007591.7751498,
+    "seen": 1790195938.7810037,
+    "ast_hash": "e44eacadf55e2864551416f2650004c3",
+    "semantic_hash": "e44eacadf55e2864551416f2650004c3"
+  },
+  "src/components/ui/ScrollReveal.jsx": {
+    "mtime": 1787415358.1918921,
+    "seen": 1790195938.7810059,
+    "ast_hash": "86fea602ab16e63bc7b7cf4763a176b2",
+    "semantic_hash": "86fea602ab16e63bc7b7cf4763a176b2"
+  },
+  "src/components/ui/Section.jsx": {
+    "mtime": 1787415293.9127133,
+    "seen": 1790195938.781007,
+    "ast_hash": "993e5074d08a36426e0a58ed2c8e89c6",
+    "semantic_hash": "993e5074d08a36426e0a58ed2c8e89c6"
+  },
+  "src/components/ui/SpotlightCard.jsx": {
+    "mtime": 1787414149.3473537,
+    "seen": 1790195938.781009,
+    "ast_hash": "7030b2fbf7396c4bd0813a8102c55495",
+    "semantic_hash": "7030b2fbf7396c4bd0813a8102c55495"
+  },
+  "src/components/ui/WhatsAppCTA.jsx": {
+    "mtime": 1787411255.967196,
+    "seen": 1790195938.7810104,
+    "ast_hash": "9b8406790264bcd63a46819a78ddfd16",
+    "semantic_hash": "9b8406790264bcd63a46819a78ddfd16"
+  },
+  "src/config/site.js": {
+    "mtime": 1788008385.6029494,
+    "seen": 1790195938.781012,
+    "ast_hash": "719db9adafd903fb0bba240e18eb6d55",
+    "semantic_hash": "719db9adafd903fb0bba240e18eb6d55"
+  },
+  "src/lib/utils.js": {
+    "mtime": 1787409165.820033,
+    "seen": 1790195938.7810135,
+    "ast_hash": "eff53006b93cfdef4aef148f202f1c3c",
+    "semantic_hash": "eff53006b93cfdef4aef148f202f1c3c"
+  },
+  "src/main.jsx": {
+    "mtime": 1787408437.0,
+    "seen": 1790195938.7810154,
+    "ast_hash": "e13723e2574429d9a6d849727e3ff695",
+    "semantic_hash": "e13723e2574429d9a6d849727e3ff695"
+  },
+  "vite.config.js": {
+    "mtime": 1787408797.6214986,
+    "seen": 1790195938.7810168,
+    "ast_hash": "4ce8d6fbcc678c76900e4b5d5d3c340f",
+    "semantic_hash": "4ce8d6fbcc678c76900e4b5d5d3c340f"
+  },
+  "PENDENCIAS.md": {
+    "mtime": 1788003662.2047267,
+    "seen": 1790195938.7810183,
+    "ast_hash": "3e478fad47ed8ae29db30d2297d2b88e",
+    "semantic_hash": "3e478fad47ed8ae29db30d2297d2b88e"
+  },
+  "PROMPT_AUDITORIA_SEGURANCA.md": {
+    "mtime": 1790193922.825555,
+    "seen": 1790195938.78102,
+    "ast_hash": "45b771c6c81692bde6b727d06f29cada",
+    "semantic_hash": "45b771c6c81692bde6b727d06f29cada"
+  },
+  "PROMPT_RED_TEAM_SEGURANCA.md": {
+    "mtime": 1790194311.1372962,
+    "seen": 1790195938.7810214,
+    "ast_hash": "e8789e4a0f737c5e7df9abe9f4d16392",
+    "semantic_hash": "e8789e4a0f737c5e7df9abe9f4d16392"
+  },
+  "PROMPT_REVISAO_CONFIGURACAO_PRODUCAO.md": {
+    "mtime": 1790194578.6348448,
+    "seen": 1790195938.7810233,
+    "ast_hash": "4989b6a37397ea755fb2c2756d1d7354",
+    "semantic_hash": "4989b6a37397ea755fb2c2756d1d7354"
+  },
+  "README.md": {
+    "mtime": 1787408437.0,
+    "seen": 1790195938.781025,
+    "ast_hash": "75eb386f17caf77fd6fe3ce1d90968ee",
+    "semantic_hash": "75eb386f17caf77fd6fe3ce1d90968ee"
+  },
+  "Regras/Avalia\u00e7\u00f5es.txt": {
+    "mtime": 1787410191.8317637,
+    "seen": 1790195938.7810276,
+    "ast_hash": "3efab8de0e11349b5c31467cc787eacf",
+    "semantic_hash": "3efab8de0e11349b5c31467cc787eacf"
+  },
+  "Regras/Informa\u00e7\u00f5es.txt": {
+    "mtime": 1787410131.7488463,
+    "seen": 1790195938.78103,
+    "ast_hash": "914d27fcc520b969df060194d33f208a",
+    "semantic_hash": "914d27fcc520b969df060194d33f208a"
+  },
+  "index.html": {
+    "mtime": 1787410695.1379728,
+    "seen": 1790195938.7810316,
+    "ast_hash": "3455785bbae3883ea8782addea193c4b",
+    "semantic_hash": "3455785bbae3883ea8782addea193c4b"
+  },
+  "public/robots.txt": {
+    "mtime": 1787410673.9840717,
+    "seen": 1790195938.7810342,
+    "ast_hash": "e3d81b0ca73bcf7c658cd8fde211fede",
+    "semantic_hash": "e3d81b0ca73bcf7c658cd8fde211fede"
+  },
+  "Regras/Fontes.jpeg": {
+    "mtime": 1787408863.2529404,
+    "seen": 1790195938.7810369,
+    "ast_hash": "c85094c8eb385a95eb3520aa398d3e25",
+    "semantic_hash": "c85094c8eb385a95eb3520aa398d3e25"
+  },
+  "Regras/Logo 2.PNG": {
+    "mtime": 1787408841.637218,
+    "seen": 1790195938.781038,
+    "ast_hash": "4995a73d500d29559367cad2aeb624e7",
+    "semantic_hash": "4995a73d500d29559367cad2aeb624e7"
+  },
+  "Regras/Logo 3.PNG": {
+    "mtime": 1787408833.9046197,
+    "seen": 1790195938.7810395,
+    "ast_hash": "7b94eda92374c287d5cfab3f61e46a2f",
+    "semantic_hash": "7b94eda92374c287d5cfab3f61e46a2f"
+  },
+  "Regras/Logo.png": {
+    "mtime": 1787408891.6270962,
+    "seen": 1790195938.7810402,
+    "ast_hash": "9202167177bbc92aedb71c3e62a4311d",
+    "semantic_hash": "9202167177bbc92aedb71c3e62a4311d"
+  },
+  "Regras/Paleta de Cores.jpeg": {
+    "mtime": 1787408884.0191848,
+    "seen": 1790195938.7810411,
+    "ast_hash": "1787387349fb908f5a10b444e53e2c31",
+    "semantic_hash": "1787387349fb908f5a10b444e53e2c31"
+  },
+  "Regras/WhatsApp Image 2026-08-22 at 11.11.06.jpeg": {
+    "mtime": 1787408874.8592951,
+    "seen": 1790195938.781042,
+    "ast_hash": "7de7b74d4d407f0b6ea05aa3c4067d85",
+    "semantic_hash": "7de7b74d4d407f0b6ea05aa3c4067d85"
+  },
+  "Regras/foto se\u00e7\u00e3o area de cuidado.jpeg": {
+    "mtime": 1787415812.7740176,
+    "seen": 1790195938.7810435,
+    "ast_hash": "78976c244889ddf70f3f86c8ddd964d4",
+    "semantic_hash": "78976c244889ddf70f3f86c8ddd964d4"
+  },
+  "Regras/foto se\u00e7\u00e3o sobre.jpeg": {
+    "mtime": 1787415819.2521505,
+    "seen": 1790195938.7810447,
+    "ast_hash": "cccddb8f3bdd189f5fab6f06576082a1",
+    "semantic_hash": "cccddb8f3bdd189f5fab6f06576082a1"
+  },
+  "public/favicon.svg": {
+    "mtime": 1787410663.5526083,
+    "seen": 1790195938.7810457,
+    "ast_hash": "ee73c6e2ae00de8c88222120c8f2c910",
+    "semantic_hash": "ee73c6e2ae00de8c88222120c8f2c910"
+  },
+  "public/og-image.jpg": {
+    "mtime": 1787410692.330922,
+    "seen": 1790195938.7810469,
+    "ast_hash": "7de7b74d4d407f0b6ea05aa3c4067d85",
+    "semantic_hash": "7de7b74d4d407f0b6ea05aa3c4067d85"
+  },
+  "src/assets/img/about.jpg": {
+    "mtime": 1787415949.0349197,
+    "seen": 1790195938.7810478,
+    "ast_hash": "cccddb8f3bdd189f5fab6f06576082a1",
+    "semantic_hash": "cccddb8f3bdd189f5fab6f06576082a1"
+  },
+  "src/assets/img/care-areas.jpg": {
+    "mtime": 1787415949.1330378,
+    "seen": 1790195938.7810488,
+    "ast_hash": "78976c244889ddf70f3f86c8ddd964d4",
+    "semantic_hash": "78976c244889ddf70f3f86c8ddd964d4"
+  },
+  "src/assets/img/dra-karen.png": {
+    "mtime": 1788006487.2000895,
+    "seen": 1790195938.78105,
+    "ast_hash": "b589e587f415e5d0efcbd17cfb93d943",
+    "semantic_hash": "b589e587f415e5d0efcbd17cfb93d943"
+  },
+  "src/assets/img/fundo.png": {
+    "mtime": 1788005152.8561256,
+    "seen": 1790195938.781051,
+    "ast_hash": "5d031e43c3b17f760bfd31ef34d2ee58",
+    "semantic_hash": "5d031e43c3b17f760bfd31ef34d2ee58"
+  },
+  "src/assets/img/logo-nova.png": {
+    "mtime": 1788008576.8122418,
+    "seen": 1790195938.7810519,
+    "ast_hash": "9202167177bbc92aedb71c3e62a4311d",
+    "semantic_hash": "9202167177bbc92aedb71c3e62a4311d"
+  }
+}

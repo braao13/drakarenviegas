@@ -1,0 +1,169 @@
+/* Hero full-bleed — foto do consultório ocupa a tela inteira, retrato da
+   Dra. Karen à esquerda com tarja de cores da paleta e logo em marca-d'água,
+   textos à direita. Estrutura baseada em referência aprovada pelo cliente
+   (29/08/2026) — ver preview enviado no chat. Cores/fontes usam os tokens
+   já definidos em src/index.css (--avela/--beige/--creme, --font-heading
+   etc.), não valores novos. */
+
+.hero-banner {
+  position: relative;
+  width: 100%;
+  min-height: 100svh;
+  overflow: hidden;
+  isolation: isolate;
+  display: flex;
+  align-items: center;
+}
+
+.hero-banner__bg {
+  position: absolute;
+  inset: 0;
+  z-index: -3;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.hero-banner__scrim {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  pointer-events: none;
+  background: linear-gradient(
+    90deg,
+    rgba(248, 240, 229, 0) 0%,
+    rgba(248, 240, 229, 0) 40%,
+    rgba(248, 240, 229, 0.6) 66%,
+    rgba(248, 240, 229, 0.94) 100%
+  );
+}
+
+.hero-banner__inner {
+  position: relative;
+  width: min(1440px, 100%);
+  margin: 0 auto;
+  padding: 6.5rem clamp(1.25rem, 5vw, 4rem) 4rem;
+  display: grid;
+  grid-template-columns: minmax(320px, 46%) minmax(360px, 54%);
+  align-items: center;
+  gap: 2rem;
+}
+
+.hero-banner__photo-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 560px;
+}
+
+.hero-banner__decoration {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: clamp(70px, 9vw, 120px);
+  aspect-ratio: 170 / 447;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 18px 40px rgba(64, 43, 26, 0.18);
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+}
+.hero-banner__decoration span {
+  flex: 1;
+}
+.hero-banner__decoration span:nth-child(1) {
+  background: var(--avela);
+}
+.hero-banner__decoration span:nth-child(2) {
+  background: var(--beige);
+}
+.hero-banner__decoration span:nth-child(3) {
+  background: var(--creme);
+}
+
+.hero-banner__card {
+  position: relative;
+  z-index: 2;
+  width: clamp(300px, 34vw, 480px);
+  aspect-ratio: 1 / 1.05;
+  overflow: hidden;
+  border-radius: 24px;
+  box-shadow: 0 20px 50px rgba(64, 43, 26, 0.22);
+  transform: translateX(1.5vw);
+}
+
+.hero-banner__photo {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 18%;
+}
+
+.hero-banner__card-scrim {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(42, 26, 16, 0) 55%, rgba(42, 26, 16, 0.55) 100%);
+  pointer-events: none;
+}
+
+.hero-banner__brand {
+  position: absolute;
+  left: clamp(20px, 2.4vw, 32px);
+  bottom: clamp(16px, 2.4vw, 28px);
+  width: clamp(130px, 15vw, 190px);
+  height: auto;
+  opacity: 0.96;
+}
+
+.hero-banner__content {
+  position: relative;
+  z-index: 3;
+  max-width: 640px;
+}
+
+@media (max-width: 1024px) {
+  .hero-banner__inner {
+    grid-template-columns: 1fr;
+    padding-top: 5.5rem;
+    gap: 2.5rem;
+  }
+  .hero-banner__photo-wrap {
+    min-height: 420px;
+  }
+  .hero-banner__card {
+    width: clamp(280px, 60vw, 420px);
+    transform: none;
+    margin: 0 auto;
+  }
+  .hero-banner__content {
+    max-width: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero-banner {
+    min-height: auto;
+  }
+  .hero-banner__inner {
+    padding: 6.5rem 1.25rem 2.5rem;
+  }
+  .hero-banner__photo-wrap {
+    min-height: 0;
+  }
+  .hero-banner__card {
+    width: min(84vw, 380px);
+  }
+  .hero-banner__scrim {
+    background: linear-gradient(
+      180deg,
+      rgba(248, 240, 229, 0) 0%,
+      rgba(248, 240, 229, 0.6) 58%,
+      rgba(248, 240, 229, 0.96) 100%
+    );
+  }
+}

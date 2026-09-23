@@ -1,0 +1,26 @@
+.scroll-reveal-word {
+  display: inline-block;
+  opacity: 0.1;
+  filter: blur(6px);
+  transform: translateY(0.3em);
+  transition:
+    opacity 0.6s ease,
+    filter 0.6s ease,
+    transform 0.6s ease;
+  transition-delay: var(--reveal-delay, 0s);
+}
+
+.scroll-reveal-text.is-revealed .scroll-reveal-word {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .scroll-reveal-word {
+    transition: none;
+    opacity: 1;
+    filter: none;
+    transform: none;
+  }
+}

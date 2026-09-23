@@ -1,0 +1,151 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+/* ---------------------------------------------------------------------
+   Design tokens — origem: Regras/Paleta de Cores.jpeg e Regras/Fontes.jpeg
+   Avelã #C6A67F · Beige #DCCBAF · Off-White Crème #F8F0E5
+   Fontes: display serif (equiv. a "Losta Masta Thin") para títulos,
+   geométrica bold ("Sklow Bold") para subtítulos, Cabin para corpo/infos.
+   ------------------------------------------------------------------- */
+:root {
+  --avela: #c6a67f;
+  --beige: #dccbaf;
+  --creme: #f8f0e5;
+  --ink: #2a2119;
+
+  --background: var(--creme);
+  --foreground: var(--ink);
+
+  --card: #ffffff;
+  --card-foreground: var(--ink);
+  --popover: #ffffff;
+  --popover-foreground: var(--ink);
+
+  --primary: var(--avela);
+  --primary-foreground: #ffffff;
+
+  --secondary: var(--beige);
+  --secondary-foreground: var(--ink);
+
+  --muted: #efe6d8;
+  --muted-foreground: #786a5a;
+
+  --accent: var(--beige);
+  --accent-foreground: var(--ink);
+
+  --destructive: #b3261e;
+  --border: #e4d7c3;
+  --input: #e4d7c3;
+  --ring: var(--avela);
+
+  --radius: 0.9rem;
+
+  font: 17px/1.6 var(--font-body);
+  color-scheme: light;
+  color: var(--foreground);
+  background: var(--background);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--background);
+  color: var(--foreground);
+}
+
+#root {
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+}
+
+@theme inline {
+  --font-body: "Cabin", system-ui, sans-serif;
+  --font-heading: "Fraunces", Georgia, serif;
+  --font-heading-alt: "Quicksand", system-ui, sans-serif;
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+  --radius-2xl: calc(var(--radius) * 1.8);
+}
+
+h1, h2, h3 {
+  font-family: var(--font-heading);
+  color: var(--foreground);
+}
+
+.font-heading {
+  font-family: var(--font-heading);
+}
+.font-heading-alt {
+  font-family: var(--font-heading-alt);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+  html {
+    @apply font-sans;
+  }
+}
+
+/* Cards de diferenciais: ao passar o mouse em um, ele "salta" à frente
+   (leve escala + sombra) e os demais apagam um pouco, guiando o foco. */
+@layer components {
+  .differential-card {
+    transition: transform 300ms ease, box-shadow 300ms ease, opacity 300ms ease,
+      border-color 300ms ease;
+  }
+  .differentials-grid:has(.differential-card:hover) .differential-card:not(:hover) {
+    opacity: 0.55;
+  }
+  .differential-card:hover {
+    transform: translateY(-4px) scale(1.04);
+    box-shadow: 0 20px 35px -18px rgb(42 33 25 / 0.35);
+    border-color: var(--primary);
+    z-index: 10;
+  }
+}
