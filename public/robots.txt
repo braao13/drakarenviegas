@@ -1,5 +1,5 @@
 User-agent: *
 Allow: /
 
-# PENDENTE: domínio final ainda não definido — troque a URL abaixo ao publicar.
-Sitemap: https://DOMINIO-PENDENTE.com.br/sitemap.xml
+# Substituído no build pela variável SITE_URL validada em vite.config.js.
+Sitemap: __SITE_URL__/sitemap.xml

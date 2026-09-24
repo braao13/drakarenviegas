@@ -24,11 +24,11 @@ function App() {
 
       <main className="flex-1 pb-16 lg:pb-0">
         <Hero />
-        <About />
         <CareAreas />
         <Differentials />
-        <Testimonials />
         <Location />
+        <About />
+        <Testimonials />
         <FAQSection />
         <Contact />
       </main>

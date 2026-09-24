@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <!-- PENDENTE: domínio final ainda não definido -->
-    <loc>https://DOMINIO-PENDENTE.com.br/</loc>
+    <!-- __SITE_URL__ é substituído somente durante o build de produção. -->
+    <loc>__SITE_URL__/</loc>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>

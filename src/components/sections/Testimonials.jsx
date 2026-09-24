@@ -2,7 +2,11 @@ import { useMemo, useState } from "react";
 import { Section } from "@/components/ui/Section";
 import { SpotlightCard } from "@/components/ui/SpotlightCard";
 import { FilterPills } from "@/components/ui/FilterPills";
-import { testimonials, testimonialFilters } from "@/config/site";
+import {
+  googleReviewSummary,
+  testimonials,
+  testimonialFilters,
+} from "@/config/site";
 import { ChevronLeft, ChevronRight, ExternalLink, Quote, Star } from "lucide-react";
 
 const PAGE_SIZE = 3;
@@ -44,6 +48,16 @@ export function Testimonials() {
       description="Avaliações reais publicadas no Google — filtre pelo momento que mais te interessa."
       className="bg-secondary/30"
     >
+      <div className="mb-6 inline-flex flex-wrap items-center gap-x-3 gap-y-1 rounded-full border border-primary/20 bg-card px-4 py-2 shadow-sm">
+        <Stars />
+        <strong className="text-sm text-foreground">
+          {googleReviewSummary.rating} de 5
+        </strong>
+        <span className="text-sm text-muted-foreground">
+          · {googleReviewSummary.count} avaliações na ficha da Dra. Karen
+        </span>
+      </div>
+
       <FilterPills options={testimonialFilters} active={filter} onChange={handleFilterChange} />
 
       {list.length === 0 && (

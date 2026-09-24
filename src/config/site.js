@@ -12,6 +12,8 @@ export const doctor = {
   rqe: "RQE 41596",
   specialty: "Ginecologia e Obstetrícia",
   tagline: "Do pré-natal ao parto, estou com você",
+  heroDescription:
+    "Acompanhamento ginecológico e obstétrico com atenção, acolhimento e segurança em cada etapa.",
   city: "Ipatinga/MG",
 };
 
@@ -47,12 +49,9 @@ export const amenities = {
 };
 
 // Número de WhatsApp fornecido pelo cliente (+55 31 99664-8080). Usamos o
-// formato padrão wa.me (em vez do shortlink de anúncio do Instagram usado
-// antes) porque só esse formato aceita texto dinâmico via "?text=" — o
-// shortlink de anúncio ignora esse parâmetro e sempre abre com a mensagem
-// fixa configurada no Meta Business, por isso a mensagem personalizada do
-// formulário não estava chegando. Todos os CTAs do site leem deste único
-// ponto.
+// formato padrão wa.me. Por privacidade, o site usa somente a mensagem fixa
+// abaixo: nenhum dado digitado pela paciente é coletado ou colocado na URL.
+// Todos os CTAs do site leem deste único ponto.
 export const contact = {
   whatsappNumber: "5531996648080",
   whatsappLink: "https://wa.me/5531996648080",
@@ -291,6 +290,14 @@ export const testimonialFilters = [
   { value: "atendimento", label: "Atendimento" },
 ];
 
+// Resumo da ficha no momento em que Avaliações.txt foi fornecido: o arquivo
+// contém 42 avaliações, todas com cinco estrelas. Manter este dado sincronizado
+// com a ficha pública quando novas avaliações forem incorporadas ao projeto.
+export const googleReviewSummary = {
+  rating: "5,0",
+  count: 42,
+};
+
 export const faq = [
   {
     q: "Como faço para agendar uma consulta?",
@@ -320,10 +327,10 @@ export const faq = [
 
 export const nav = [
   { label: "Início", href: "#inicio" },
-  { label: "Sobre", href: "#sobre" },
   { label: "Atuação", href: "#atuacao" },
-  { label: "Depoimentos", href: "#depoimentos" },
   { label: "Localização", href: "#localizacao" },
+  { label: "Sobre", href: "#sobre" },
+  { label: "Depoimentos", href: "#depoimentos" },
   { label: "FAQ", href: "#faq" },
   { label: "Contato", href: "#contato" },
 ];

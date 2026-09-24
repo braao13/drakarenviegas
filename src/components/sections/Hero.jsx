@@ -38,12 +38,16 @@ export function Hero() {
           <h1 className="mt-4 font-heading text-4xl sm:text-5xl lg:text-6xl font-light leading-[1.05] text-foreground">
             {doctor.tagline}
           </h1>
-          <p className="mt-5 max-w-md text-base sm:text-lg italic text-foreground/80">
-            {doctor.fullName} · {doctor.crm} | {doctor.rqe}
+          <p className="mt-5 max-w-xl text-base leading-relaxed text-foreground/80 sm:text-lg">
+            {doctor.heroDescription}
           </p>
-          <p className="mt-2 flex items-center gap-1.5 text-sm font-medium text-foreground/80">
-            <MapPin aria-hidden="true" className="size-4 text-primary" />
-            {address.city}/{address.state}
+          <p className="mt-4 flex flex-wrap items-center gap-x-2 gap-y-1 text-sm font-medium text-foreground/80">
+            <span>{doctor.crm} | {doctor.rqe}</span>
+            <span aria-hidden="true">·</span>
+            <span className="inline-flex items-center gap-1.5">
+              <MapPin aria-hidden="true" className="size-4 text-primary" />
+              {address.city}/{address.state}
+            </span>
           </p>
           <div className="mt-8 flex flex-wrap items-center gap-4">
             <WhatsAppCTA size="lg" />

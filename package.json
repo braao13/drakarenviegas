@@ -7,7 +7,9 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "oxlint",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "test:security": "node --test security-tests/red-team-static.test.mjs",
+    "test:headers": "node --test security-tests/preview-security.test.mjs"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.3.3",

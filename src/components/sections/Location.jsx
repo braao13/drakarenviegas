@@ -1,11 +1,9 @@
 import { Section } from "@/components/ui/Section";
 import { address, amenities } from "@/config/site";
-import { MapPin, CreditCard, Accessibility, Clock, ExternalLink } from "lucide-react";
+import { MapPin, Accessibility, ExternalLink } from "lucide-react";
 
 const infoBlocks = [
   { icon: Accessibility, title: "Acessibilidade", items: amenities.accessibility },
-  { icon: CreditCard, title: "Pagamentos", items: amenities.payments },
-  { icon: Clock, title: "Planejamento", items: amenities.planning },
 ];
 
 export function Location() {
@@ -27,7 +25,18 @@ export function Location() {
         <div>
           <div className="flex items-start gap-2 text-base text-foreground">
             <MapPin aria-hidden="true" className="mt-0.5 size-5 shrink-0 text-primary" />
-            <address className="not-italic">{address.full}</address>
+            <address className="not-italic">
+              <a
+                href={mapsLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 font-medium [word-break:keep-all] hover:text-primary hover:underline"
+                aria-label="Abrir a ficha do consultório no Google Maps (abre em nova aba)"
+              >
+                {address.full}
+                <ExternalLink aria-hidden="true" className="size-3.5 shrink-0" />
+              </a>
+            </address>
           </div>
 
           <div className="mt-6 space-y-5">
@@ -58,7 +67,7 @@ export function Location() {
               height="100%"
               style={{ border: 0, minHeight: 360 }}
               loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
+              referrerPolicy="no-referrer"
             />
           </div>
           <a
