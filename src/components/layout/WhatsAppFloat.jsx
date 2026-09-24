@@ -1,11 +1,15 @@
 import { WhatsAppCTA } from "@/components/ui/WhatsAppCTA";
 
-// CTA persistente mobile (item 10 do briefing). Some em telas grandes, onde
-// o header já expõe o botão de agendamento.
+// Atalho persistente que reutiliza o mesmo destino e a mesma mensagem dos
+// demais botões de agendamento do site.
 export function WhatsAppFloat() {
   return (
-    <div className="fixed inset-x-0 bottom-0 z-40 border-t border-border bg-background/95 p-3 backdrop-blur supports-[backdrop-filter]:bg-background/85 lg:hidden">
-      <WhatsAppCTA className="w-full justify-center" />
+    <div className="fixed bottom-4 left-4 z-40 sm:bottom-6 sm:left-6">
+      <WhatsAppCTA
+        iconOnly
+        label="Agendar consulta"
+        className="size-14 bg-[#25d366] p-0 text-white shadow-[0_10px_30px_-8px_rgba(42,33,25,0.55)] hover:scale-105 hover:bg-[#20bd5a] focus-visible:ring-[#25d366] sm:size-16"
+      />
     </div>
   );
 }
