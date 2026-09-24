@@ -4,7 +4,7 @@ import { WhatsAppCTA } from "@/components/ui/WhatsAppCTA";
 // demais botões de agendamento do site.
 export function WhatsAppFloat() {
   return (
-    <div className="fixed bottom-4 left-4 z-40 sm:bottom-6 sm:left-6">
+    <div className="fixed right-4 bottom-4 z-40 sm:right-6 sm:bottom-6">
       <WhatsAppCTA
         iconOnly
         label="Agendar consulta"
