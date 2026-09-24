@@ -2,7 +2,7 @@ import { Section } from "@/components/ui/Section";
 import { BorderGlow } from "@/components/ui/BorderGlow";
 import { doctor, careAreas } from "@/config/site";
 import { HeartPulse, Baby, Stethoscope, Activity } from "lucide-react";
-import careAreasPhoto from "@/assets/img/care-areas.jpg";
+import careAreasPhoto from "@/assets/img/care-areas.jpeg";
 
 const icons = [Baby, Activity, HeartPulse, Stethoscope];
 
