@@ -5,6 +5,12 @@ import { HeartPulse, Baby, Stethoscope, Activity } from "lucide-react";
 import careAreasPhoto from "@/assets/img/care-areas.jpeg";
 
 const icons = [Baby, Activity, HeartPulse, Stethoscope];
+const areaPages = {
+  "Pré-natal": "/pre-natal-ipatinga/",
+  Parto: "/obstetra-ipatinga/",
+  Ginecologia: "/ginecologista-ipatinga/",
+  Obstetrícia: "/obstetra-ipatinga/",
+};
 
 export function CareAreas() {
   return (
@@ -42,6 +48,12 @@ export function CareAreas() {
                 <p className="mt-2 text-sm text-muted-foreground">
                   {area.description}
                 </p>
+                <a
+                  className="mt-4 inline-block text-sm font-semibold text-primary hover:underline"
+                  href={areaPages[area.title]}
+                >
+                  Saiba mais sobre {area.title.toLowerCase()}
+                </a>
               </BorderGlow>
             );
           })}

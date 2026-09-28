@@ -5,6 +5,7 @@ import react from "@vitejs/plugin-react";
 import { defineConfig, loadEnv } from "vite";
 
 const SITE_URL_TOKEN = "__SITE_URL__";
+const OFFICIAL_SITE_URL = "https://drakarenviegas.com";
 const CSP = [
   "default-src 'self'",
   "script-src 'self' 'sha256-gy2b6sh2LPt8K1cIivymNHONu1zK5tLqPlvQRfJu4VE='",
@@ -25,15 +26,11 @@ const SENSITIVE_PREVIEW_PATH =
 
 function resolveSiteUrl(rawValue, command) {
   if (command !== "build") return "http://localhost:5173";
-  if (!rawValue) {
-    throw new Error(
-      "SITE_URL é obrigatória no build de produção. Informe a origem HTTPS definitiva.",
-    );
-  }
+  const configuredUrl = rawValue || OFFICIAL_SITE_URL;
 
   let url;
   try {
-    url = new URL(rawValue);
+    url = new URL(configuredUrl);
   } catch {
     throw new Error("SITE_URL precisa ser uma URL absoluta válida.");
   }
@@ -106,6 +103,23 @@ export default defineConfig(({ command, mode }) => {
     },
     build: {
       sourcemap: false,
+      rollupOptions: {
+        input: {
+          home: path.resolve(import.meta.dirname, "index.html"),
+          ginecologistaIpatinga: path.resolve(
+            import.meta.dirname,
+            "ginecologista-ipatinga/index.html"
+          ),
+          obstetraIpatinga: path.resolve(
+            import.meta.dirname,
+            "obstetra-ipatinga/index.html"
+          ),
+          preNatalIpatinga: path.resolve(
+            import.meta.dirname,
+            "pre-natal-ipatinga/index.html"
+          ),
+        },
+      },
     },
     // Emula no preview os headers que ainda precisam ser configurados na
     // hospedagem real. Não substitui a configuração do CDN/servidor.
