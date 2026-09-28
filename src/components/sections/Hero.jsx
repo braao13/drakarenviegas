@@ -25,7 +25,7 @@ export function Hero() {
             {doctor.heroDescription}
           </p>
           <p className="hero-banner__credentials">
-            {doctor.crm}
+            {doctor.crm} | {doctor.rqe}
           </p>
           <div className="hero-banner__cta">
             <WhatsAppCTA size="lg" label="Agendar pelo WhatsApp" />

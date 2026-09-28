@@ -13,7 +13,7 @@ export const doctor = {
   specialty: "Ginecologia e Obstetrícia",
   tagline: "Do pré-natal ao parto, estou com você",
   heroDescription:
-    "Acompanhamento ginecológico e obstétrico com atenção, acolhimento e segurança em cada etapa.",
+    "Acompanhamento ginecológico e obstétrico, com formação em Gestação de Alto Risco, atenção, acolhimento e segurança em cada etapa.",
   city: "Ipatinga/MG",
 };
 
