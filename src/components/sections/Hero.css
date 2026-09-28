@@ -1,169 +1,178 @@
-/* Hero full-bleed — foto do consultório ocupa a tela inteira, retrato da
-   Dra. Karen à esquerda com tarja de cores da paleta e logo em marca-d'água,
-   textos à direita. Estrutura baseada em referência aprovada pelo cliente
-   (29/08/2026) — ver preview enviado no chat. Cores/fontes usam os tokens
-   já definidos em src/index.css (--avela/--beige/--creme, --font-heading
-   etc.), não valores novos. */
-
 .hero-banner {
   position: relative;
   width: 100%;
-  min-height: 100svh;
+  min-height: clamp(650px, 52vw, 750px);
   overflow: hidden;
   isolation: isolate;
   display: flex;
   align-items: center;
+  background: var(--creme);
 }
 
-.hero-banner__bg {
+.hero-banner__background {
   position: absolute;
   inset: 0;
-  z-index: -3;
+  z-index: -1;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center center;
-}
-
-.hero-banner__scrim {
-  position: absolute;
-  inset: 0;
-  z-index: -2;
+  object-position: center;
   pointer-events: none;
-  background: linear-gradient(
-    90deg,
-    rgba(248, 240, 229, 0) 0%,
-    rgba(248, 240, 229, 0) 40%,
-    rgba(248, 240, 229, 0.6) 66%,
-    rgba(248, 240, 229, 0.94) 100%
-  );
 }
 
 .hero-banner__inner {
   position: relative;
   width: min(1440px, 100%);
   margin: 0 auto;
-  padding: 6.5rem clamp(1.25rem, 5vw, 4rem) 4rem;
+  min-height: inherit;
+  padding: 6.25rem clamp(1.25rem, 7vw, 7rem) 0;
   display: grid;
-  grid-template-columns: minmax(320px, 46%) minmax(360px, 54%);
+  grid-template-columns: minmax(300px, 50%) minmax(360px, 50%);
   align-items: center;
-  gap: 2rem;
+  gap: 0;
 }
 
 .hero-banner__photo-wrap {
   position: relative;
+  align-self: stretch;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 560px;
-}
-
-.hero-banner__decoration {
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  width: clamp(70px, 9vw, 120px);
-  aspect-ratio: 170 / 447;
-  border-radius: 14px;
-  overflow: hidden;
-  box-shadow: 0 18px 40px rgba(64, 43, 26, 0.18);
-  z-index: 1;
-  display: flex;
-  flex-direction: column;
-}
-.hero-banner__decoration span {
-  flex: 1;
-}
-.hero-banner__decoration span:nth-child(1) {
-  background: var(--avela);
-}
-.hero-banner__decoration span:nth-child(2) {
-  background: var(--beige);
-}
-.hero-banner__decoration span:nth-child(3) {
-  background: var(--creme);
-}
-
-.hero-banner__card {
-  position: relative;
-  z-index: 2;
-  width: clamp(300px, 34vw, 480px);
-  aspect-ratio: 1 / 1.05;
-  overflow: hidden;
-  border-radius: 24px;
-  box-shadow: 0 20px 50px rgba(64, 43, 26, 0.22);
-  transform: translateX(1.5vw);
+  justify-content: flex-end;
+  min-height: 565px;
 }
 
 .hero-banner__photo {
+  position: absolute;
+  right: clamp(-1rem, 1vw, 1.5rem);
+  bottom: 0;
   display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center 18%;
-}
-
-.hero-banner__card-scrim {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(180deg, rgba(42, 26, 16, 0) 55%, rgba(42, 26, 16, 0.55) 100%);
-  pointer-events: none;
-}
-
-.hero-banner__brand {
-  position: absolute;
-  left: clamp(20px, 2.4vw, 32px);
-  bottom: clamp(16px, 2.4vw, 28px);
-  width: clamp(130px, 15vw, 190px);
-  height: auto;
-  opacity: 0.96;
+  width: auto;
+  height: clamp(665px, 55vw, 790px);
+  max-width: none;
+  object-fit: contain;
+  object-position: right bottom;
+  filter: drop-shadow(0 14px 18px rgb(81 55 31 / 0.1));
 }
 
 .hero-banner__content {
   position: relative;
   z-index: 3;
-  max-width: 640px;
+  max-width: 620px;
+  padding-block: 2rem;
+}
+
+.hero-banner__title {
+  margin: 1rem 0 0;
+  font-family: var(--font-heading);
+  font-size: clamp(2.7rem, 4.2vw, 4.7rem);
+  font-weight: 300;
+  line-height: 0.98;
+  letter-spacing: -0.045em;
+}
+
+.hero-banner__title-intro,
+.hero-banner__title-highlight {
+  display: block;
+}
+
+.hero-banner__title-intro {
+  color: var(--foreground);
+}
+
+.hero-banner__title-highlight {
+  margin-top: 0.1em;
+  color: #ac693e;
+}
+
+.hero-banner__description {
+  max-width: 34rem;
+  margin: 1.75rem 0 0;
+  color: color-mix(in srgb, var(--foreground) 78%, transparent);
+  font-size: clamp(1rem, 1.35vw, 1.2rem);
+  line-height: 1.5;
+}
+
+.hero-banner__credentials {
+  display: flex;
+  gap: 0.65rem;
+  margin: 1.45rem 0 0;
+  color: var(--foreground);
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.025em;
+}
+
+.hero-banner__cta {
+  margin-top: 1.75rem;
+}
+
+.hero-banner__cta a {
+  border-radius: 0.7rem;
+  background: #a96538;
+  box-shadow: 0 8px 16px rgb(88 49 23 / 0.2);
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.hero-banner__cta a:hover {
+  background: #92562f;
 }
 
 @media (max-width: 1024px) {
+  .hero-banner {
+    min-height: 640px;
+  }
   .hero-banner__inner {
-    grid-template-columns: 1fr;
-    padding-top: 5.5rem;
-    gap: 2.5rem;
+    padding-inline: clamp(1.5rem, 5vw, 3rem);
+    grid-template-columns: minmax(280px, 51%) minmax(260px, 49%);
+    gap: 1rem;
   }
   .hero-banner__photo-wrap {
-    min-height: 420px;
+    min-height: 480px;
   }
-  .hero-banner__card {
-    width: clamp(280px, 60vw, 420px);
-    transform: none;
-    margin: 0 auto;
+  .hero-banner__photo {
+    right: -1.75rem;
+    height: clamp(590px, 62vw, 700px);
   }
-  .hero-banner__content {
-    max-width: none;
+  .hero-banner__title {
+    font-size: clamp(2.45rem, 5vw, 3.7rem);
   }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 700px) {
   .hero-banner {
     min-height: auto;
   }
   .hero-banner__inner {
-    padding: 6.5rem 1.25rem 2.5rem;
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+    padding: 6.5rem 1.25rem 0;
+  }
+  .hero-banner__content {
+    padding-block: 0;
+  }
+  .hero-banner__background {
+    object-position: 58% center;
   }
   .hero-banner__photo-wrap {
-    min-height: 0;
+    justify-content: center;
+    min-height: clamp(420px, 120vw, 560px);
   }
-  .hero-banner__card {
-    width: min(84vw, 380px);
+  .hero-banner__photo {
+    right: 50%;
+    height: min(135vw, 630px);
+    transform: translateX(50%);
   }
-  .hero-banner__scrim {
-    background: linear-gradient(
-      180deg,
-      rgba(248, 240, 229, 0) 0%,
-      rgba(248, 240, 229, 0.6) 58%,
-      rgba(248, 240, 229, 0.96) 100%
-    );
+  .hero-banner__title {
+    font-size: clamp(2.45rem, 11vw, 3.45rem);
+  }
+  .hero-banner__description {
+    margin-top: 1.35rem;
+  }
+  .hero-banner__cta :is(a, button) {
+    min-height: 3.15rem;
+    width: 100%;
   }
 }

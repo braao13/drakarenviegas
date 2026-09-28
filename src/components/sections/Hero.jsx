@@ -1,63 +1,44 @@
 import { WhatsAppCTA } from "@/components/ui/WhatsAppCTA";
-import { doctor, address } from "@/config/site";
-import fundo from "@/assets/img/fundo.png";
-import draKaren from "@/assets/img/dra-karen.png";
-import logo from "@/assets/img/logo-nova.png";
-import { MapPin } from "lucide-react";
+import { doctor } from "@/config/site";
+import heroBackground from "@/assets/img/hero-consultorio.png";
+import draKaren from "@/assets/img/hero-dra-karen.png";
 import "./Hero.css";
 
 export function Hero() {
   return (
     <section id="inicio" className="hero-banner scroll-mt-20">
-      <img className="hero-banner__bg" src={fundo} alt="" aria-hidden="true" fetchPriority="high" />
-      <div className="hero-banner__scrim" aria-hidden="true" />
+      <img
+        className="hero-banner__background"
+        src={heroBackground}
+        alt=""
+        aria-hidden="true"
+        fetchPriority="high"
+      />
 
       <div className="hero-banner__inner">
-        <div className="hero-banner__photo-wrap">
-          <div className="hero-banner__decoration" aria-hidden="true">
-            <span />
-            <span />
-            <span />
-          </div>
-
-          <figure className="hero-banner__card">
-            <img className="hero-banner__photo" src={draKaren} alt={`${doctor.fullName}, ${doctor.specialty}`} />
-            <div className="hero-banner__card-scrim" aria-hidden="true" />
-            <img
-              className="hero-banner__brand"
-              src={logo}
-              alt={`${doctor.shortName} — ${doctor.specialty}`}
-            />
-          </figure>
-        </div>
-
         <div className="hero-banner__content">
-          <span className="font-heading-alt text-xs sm:text-sm font-bold uppercase tracking-[0.18em] text-foreground">
-            {doctor.specialty}
-          </span>
-          <h1 className="mt-4 font-heading text-4xl sm:text-5xl lg:text-6xl font-light leading-[1.05] text-foreground">
-            {doctor.tagline}
+          <h1 className="hero-banner__title">
+            <span className="hero-banner__title-intro">{doctor.specialty}</span>
+            <span className="hero-banner__title-highlight">{doctor.tagline}</span>
           </h1>
-          <p className="mt-5 max-w-xl text-base leading-relaxed text-foreground/80 sm:text-lg">
+          <p className="hero-banner__description">
             {doctor.heroDescription}
           </p>
-          <p className="mt-4 flex flex-wrap items-center gap-x-2 gap-y-1 text-sm font-medium text-foreground/80">
-            <span>{doctor.crm} | {doctor.rqe}</span>
-            <span aria-hidden="true">·</span>
-            <span className="inline-flex items-center gap-1.5">
-              <MapPin aria-hidden="true" className="size-4 text-primary" />
-              {address.city}/{address.state}
-            </span>
+          <p className="hero-banner__credentials">
+            {doctor.crm}
           </p>
-          <div className="mt-8 flex flex-wrap items-center gap-4">
-            <WhatsAppCTA size="lg" />
-            <a
-              href="#sobre"
-              className="text-sm font-semibold text-foreground hover:text-primary"
-            >
-              Conhecer a Dra. Karen →
-            </a>
+          <div className="hero-banner__cta">
+            <WhatsAppCTA size="lg" label="Agendar pelo WhatsApp" />
           </div>
+        </div>
+
+        <div className="hero-banner__photo-wrap">
+          <img
+            className="hero-banner__photo"
+            src={draKaren}
+            alt={`${doctor.fullName}, ${doctor.specialty}`}
+            fetchPriority="high"
+          />
         </div>
       </div>
     </section>
