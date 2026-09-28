@@ -19,7 +19,7 @@ export function Location() {
       id="localizacao"
       eyebrow="Localização"
       title="Onde fica o consultório"
-      className="bg-background"
+      className="bg-secondary/30"
     >
       <div className="grid gap-8 lg:grid-cols-2">
         <div>
