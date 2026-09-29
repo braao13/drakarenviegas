@@ -35,7 +35,7 @@ export function Header() {
           : "border-transparent bg-background/95"
       )}
     >
-      <Container className="flex h-28 items-center justify-between">
+      <Container className="flex h-20 items-center justify-between">
         <a href="#inicio" className="flex items-center gap-2" aria-label={`${doctor.fullName} — início`}>
           <LogoMark className="h-24 sm:h-[100px]" />
         </a>

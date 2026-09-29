@@ -183,9 +183,11 @@
     display: none;
   }
   .hero-banner__cta--mobile {
+    position: relative;
+    z-index: 4;
     display: block;
     width: 100%;
-    margin-top: -0.25rem;
+    margin-top: calc(-4.5rem + 30px);
     padding-bottom: 1.5rem;
   }
 }
