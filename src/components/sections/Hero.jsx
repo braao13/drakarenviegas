@@ -1,7 +1,7 @@
 import { WhatsAppCTA } from "@/components/ui/WhatsAppCTA";
 import { doctor } from "@/config/site";
 import heroBackground from "@/assets/img/hero-consultorio.png";
-import draKaren from "@/assets/img/hero-dra-karen.png";
+import draKaren from "@/assets/img/dra-karen-clara.png";
 import "./Hero.css";
 
 export function Hero() {
@@ -39,6 +39,10 @@ export function Hero() {
             alt={`${doctor.fullName}, ${doctor.specialty}`}
             fetchPriority="high"
           />
+        </div>
+
+        <div className="hero-banner__cta hero-banner__cta--mobile">
+          <WhatsAppCTA size="lg" label="Agendar pelo WhatsApp" />
         </div>
       </div>
     </section>

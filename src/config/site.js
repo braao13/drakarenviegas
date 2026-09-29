@@ -13,7 +13,7 @@ export const doctor = {
   specialty: "Ginecologia e Obstetrícia",
   tagline: "Do pré-natal ao parto, estou com você",
   heroDescription:
-    "Acompanhamento ginecológico e obstétrico, com formação em Gestação de Alto Risco, atenção, acolhimento e segurança em cada etapa.",
+    "Acompanhamento ginecológico e obstétrico, com pós graduação em gestação de alto risco, atenção, acolhimento e segurança em cada etapa.",
   city: "Ipatinga/MG",
 };
 
@@ -72,15 +72,23 @@ export const careAreas = [
   },
   {
     title: "Parto",
-    description: "Suporte no momento do parto, com segurança e cuidado humanizado.",
+    description:
+      "Acompanhamento individualizado, com segurança, acolhimento e respeito às escolhas da mulher em cada etapa do nascimento.",
   },
   {
     title: "Ginecologia",
-    description: "Cuidado com a saúde da mulher em todas as fases da vida.",
+    description:
+      "Cuidado integral com a saúde da mulher, em todas as fases da vida, com atenção, prevenção e acompanhamento personalizado.",
   },
   {
     title: "Obstetrícia",
-    description: "Atendimento obstétrico completo, da concepção ao pós-parto.",
+    description:
+      "Acompanhamento completo da gestação, com cuidado especializado em gestações de alto risco, desde o pré-natal até o pós-parto.",
+  },
+  {
+    title: "Gestação de alto risco",
+    description:
+      "Acompanhamento especializado para gestações que exigem cuidados adicionais, com atenção individualizada, segurança e acolhimento em cada etapa, para cuidar da saúde da mãe e do bebê.",
   },
 ];
 
@@ -317,11 +325,11 @@ export const faq = [
   },
   {
     q: "Quais formas de pagamento são aceitas?",
-    a: "Cartão de crédito, cartão de débito e pagamento por aproximação (NFC).",
+    a: "Dinheiro, pix, cartões de débito ou crédito.",
   },
   {
     q: "Quando devo iniciar o pré-natal?",
-    a: "O ideal é iniciar assim que a gravidez for confirmada, para acompanhar cada etapa da gestação desde o começo.",
+    a: "O acompanhamento pré-natal deve começar assim que a gravidez for confirmada. Iniciar os cuidados precocemente permite acompanhar a saúde da mãe e o desenvolvimento do bebê desde o início da gestação.",
   },
 ];
 

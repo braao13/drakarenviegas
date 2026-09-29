@@ -3,6 +3,7 @@ import { BorderGlow } from "@/components/ui/BorderGlow";
 import { doctor, careAreas } from "@/config/site";
 import { HeartPulse, Baby, Stethoscope, Activity } from "lucide-react";
 import careAreasPhoto from "@/assets/img/care-areas.jpeg";
+import "./CareAreas.css";
 
 const icons = [Baby, Activity, HeartPulse, Stethoscope];
 const areaPages = {
@@ -10,6 +11,7 @@ const areaPages = {
   Parto: "/obstetra-ipatinga/",
   Ginecologia: "/ginecologista-ipatinga/",
   Obstetrícia: "/obstetra-ipatinga/",
+  "Gestação de alto risco": "/obstetra-ipatinga/",
 };
 
 export function CareAreas() {
@@ -29,13 +31,16 @@ export function CareAreas() {
           loading="lazy"
         />
 
-        <div className="grid gap-5 sm:grid-cols-2">
+        <div className="care-areas__cards grid gap-5 sm:grid-cols-2">
           {careAreas.map((area, index) => {
             const Icon = icons[index % icons.length];
+            const isHighRisk = area.title === "Gestação de alto risco";
             return (
               <BorderGlow
                 key={area.title}
-                className="border border-border p-6 shadow-sm transition-shadow hover:shadow-md"
+                className={`care-areas__card border border-border p-6 shadow-sm transition-shadow hover:shadow-md${
+                  isHighRisk ? " care-areas__card--high-risk" : ""
+                }`}
                 backgroundColor="var(--card)"
                 borderRadius={20}
               >

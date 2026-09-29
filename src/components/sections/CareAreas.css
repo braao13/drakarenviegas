@@ -1,0 +1,14 @@
+@media (min-width: 701px) {
+  .care-areas__card--high-risk {
+    grid-column: 1 / -1;
+    order: -1;
+    width: min(100%, 34rem);
+    justify-self: center;
+  }
+}
+
+@media (max-width: 700px) {
+  .care-areas__card--high-risk {
+    order: -1;
+  }
+}
